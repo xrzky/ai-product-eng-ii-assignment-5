@@ -1,0 +1,16 @@
+name: fin-dev
+
+services:
+  postgres:
+    image: postgres:16
+    ports:
+      - "5434:5432"
+    environment:
+      POSTGRES_USER: fin
+      POSTGRES_PASSWORD: fin
+      POSTGRES_DB: fin
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:
