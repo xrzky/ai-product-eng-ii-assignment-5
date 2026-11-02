@@ -13,9 +13,7 @@
     ".": "./src/index.ts"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "typecheck": "tsc --noEmit",
-    "try": "node --env-file-if-exists=../../.env --import tsx src/try.ts"
+    "typecheck": "tsc --noEmit"
   },
   "keywords": [],
   "author": "",
